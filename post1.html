@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Jhan's Blog</title>
+</head>
+<body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://www.linkedin.com/in/can-caglar/">LinkedIn</a></li>
+                <li><a href="https://github.com/jhancharler">Github</a></li>
+                <li><a href="#">Web Apps</a></li>
+                <li class="right"><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+        <section class="intro">
+            <article>
+                <header>
+                <h1>My First Commercial Project: Mars</h1>
+                </header>
+                <img src="media/mars.png">
+                <h3>What is Mars?</h3>
+                <p>When I joined PDP in 2016, they were starting a new, exciting project to bring Lightgun games back into the market.</p>
+                <p>Although once extremely popular, due to the decline of CRT-TV's, the lightgun genre was slowly dying. This is because the technology that allowed them to work was no longer functional on the newer Plasma, LED or LCD TVs. Mars is an innovative technology that allows lightgun games to be played on any screen, even on a projector!</p>
+                <h4><strong>My Role</strong></h4>
+                <p>As a Junior Research and Development Engineer, I started my role building physical prototypes. This included reading schematics and soldering circuits on to breakout boards. I was also involved with writing firmware (C++) for test purposes on mbed microcontrollers.</p>
+                <p>Towards the end of the Mars project, I was making vital contributions to the development of the project. Namely:</p>
+                <ol>
+                    <li>Adding key firmware features, such as a 'knock detection algorithm' which uses the output from a 3-axis accelerometer, communicating via I2C with the main microprocessor, to determine movement whilst identifying and ignoring false positive data. The code was written in C++.</li>
+                    <li>Developing a PC software to enable the Mars hardware to work with the PC (see article here).</li>
+                    <li>Developing QC test software and hardware (C#) to identify faulty units during mass production. This work involved learning to develop a physical container to prevent external sources from interfering with the data, along with software to analyze data and provide a pass or a fail report. This work involved learning a popular computer vision library, opencv along with developing Windows forms applications.</li>
+                    <li>Identifying and fixing major firmware bug fixes. An example was when I identified that the laser power output would intermittently increase in power significantly. The cause of the bug was due to the PWM circuitry 'flipping' it's ON/OFF durations (off time became on time and vice versa). I discovered that this was a bug within the microcontroller's internal design, which was triggered whenever the PWM pins were re-initialized. The fix was to only initialize the PWM pins once, and flag this so that it is not initialized again.</li>
+                </ol>
+                <p>Aside from the technical work, I have been involved with sales meetings where I demonstrated Mars to buyers from major companies such as GAME and Amazon, both in the UK and at Gamescom in Cologne. I have also travelled to Hong Kong and China to support test laboratories in safety tests.</p>
+                <p>My most recent achievements have been designing and developing the Mars PC software, which allows MARS to be played on the PC, and finally a Mars set-up guide video which was aimed at consumers to help them with the set-up procedure of the system.</p>
+                <h4><strong>Skills Developed</strong></h4>
+                <ol>
+                    <li>AWindows forms application development with C#.</li>
+                    <li>Debugging and developing using Keil uVision and Microsoft Visual Studio IDEs.</li>
+                    <li>Writing Python scripts to visually display and analyze data from research experiments (e.g. accelerometer readings).</li>
+                    <li>Public speaking skills.</li>
+                    <li>Technical report writing skills including the ability to update and maintain an API.</li>
+                </ol>
+            </article>
+            
+        </section>
+            
+    </div>
+</body>
+</html>
