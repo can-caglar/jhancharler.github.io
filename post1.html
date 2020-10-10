@@ -33,7 +33,7 @@
                 <p>Towards the end of the Mars project, I was making vital contributions to the development of the project. Namely:</p>
                 <ol>
                     <li>Adding key firmware features, such as a 'knock detection algorithm' which uses the output from a 3-axis accelerometer, communicating via I2C with the main microprocessor, to determine movement whilst identifying and ignoring false positive data. The code was written in C++.</li>
-                    <li>Developing a PC software to enable the Mars hardware to work with the PC (see article here).</li>
+                    <li>Developing a PC software to enable the Mars hardware to work with the PC (see article <a href="post3.html">here</a>).</li>
                     <li>Developing QC test software and hardware (C#) to identify faulty units during mass production. This work involved learning to develop a physical container to prevent external sources from interfering with the data, along with software to analyze data and provide a pass or a fail report. This work involved learning a popular computer vision library, opencv along with developing Windows forms applications.</li>
                     <li>Identifying and fixing major firmware bug fixes. An example was when I identified that the laser power output would intermittently increase in power significantly. The cause of the bug was due to the PWM circuitry 'flipping' it's ON/OFF durations (off time became on time and vice versa). I discovered that this was a bug within the microcontroller's internal design, which was triggered whenever the PWM pins were re-initialized. The fix was to only initialize the PWM pins once, and flag this so that it is not initialized again.</li>
                 </ol>
